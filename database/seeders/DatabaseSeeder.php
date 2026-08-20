@@ -49,6 +49,7 @@ class DatabaseSeeder extends Seeder
         $this->seedAvailability($carlos);
         $this->seedMariaBook($maria);
         $this->seedCarlosBook($carlos);
+        $this->call(HeroAgentsSeeder::class);
     }
 
     private function seedAvailability(User $user): void
